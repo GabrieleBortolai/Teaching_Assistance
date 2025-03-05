@@ -11,7 +11,7 @@ int main(){
 
     float a00, a01, a02, a10, a11, a12;
 
-    cout<<"i coeff vengono letti dal file coef"<<endl;
+    cout<<"I coeff vengono letti dal file coef.txt"<<endl;
     cin>>a00>>a01>>a02>>a10>>a11>>a12;
 
     if(test(det(a00, a01, a10, a11))){
@@ -29,7 +29,7 @@ int main(){
 }
 
 bool test(float delta){
-    if(delta > 0 || delta < 0){
+    if(delta != 0){
         cout<<"Il sistema ha soluzioni"<<endl;
         return true;
     } else {
