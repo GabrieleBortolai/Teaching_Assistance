@@ -20,6 +20,9 @@ int main(){
 
         cout<<"La prima soluzione vale: "<<x1<<endl;
         cout<<"La seconda soluzione vale: "<<x2<<endl;
+    } else {
+        cerr<<"Delta negativo"<<endl;
+        return 1;
     }
 
     return 0;
@@ -41,13 +44,15 @@ float Reader(string title){
 
 bool Test(float a, float b, float c){
 
-    if(pow(b, 2) - 4 * a * c >= 0){
+    // if(pow(b, 2) - 4 * a * c >= 0){
 
-        return true;
-    } else {
-        cerr<<"L'equazione non ammette soluzioni reali"<<endl;
-        return false;
-    }
+    //     return true;
+    // } else {
+    //     cerr<<"L'equazione non ammette soluzioni reali"<<endl;
+    //     return false;
+    // }
+
+    return pow(b, 2) - 4 * a * c >= 0;
 }
 
 float Delta(float a, float b, float c){

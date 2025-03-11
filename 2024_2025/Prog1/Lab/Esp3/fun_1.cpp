@@ -13,8 +13,8 @@ int main(){
     int l1 = Reader("Inserire il primo lato");
     int l2 = Reader("Inserire il secondo lato");
     int l3 = Reader("Inserire il terzo lato");
-
-    if(Triang(l1, l2, l2)){
+    
+    if(!Triang(l1, l2, l2)){
         int per = Per(l1, l2, l3);
         double area = Area(per, l1, l2, l3);
 
@@ -48,14 +48,16 @@ int Reader(string title){
 
 bool Triang(int l1, int l2, int l3){
 
-    if(l1 <= l2 + l3 && l2 <= l1 + l3 && l3 <= l2 + l1){
+    // if(l1 <= l2 + l3 && l2 <= l1 + l3 && l3 <= l2 + l1){
 
-        return true;
+    //     return true;
     
-    } else {
-        cerr<<"I valori inseriti non formano un triangolo"<<endl;
-        return true;
-    }
+    // } else {
+    //     cerr<<"I valori inseriti non formano un triangolo"<<endl;
+    //     return false;
+    // }
+
+    return (l1 <= l2 + l3) && (l2 <= l1 + l3) && (l3 <= l2 + l1);
 }
 
 int Per(int l1, int l2, int l3){
