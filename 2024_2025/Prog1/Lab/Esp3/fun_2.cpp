@@ -13,6 +13,7 @@ int main(){
     float b = Reader("Inserire b");
     float c = Reader("Inserire c");
 
+
     if(Test(a, b, c)){
     
         float x1 = (-b + Delta(a, b, c))/(2 * a);
