@@ -36,13 +36,17 @@ int Reader(string title){
     cout<<title<<endl;
     cin>>a;
 
-    if(!cin || a <= 0){
+    if((!cin)){
         
         cerr<<"Errore variabile non ammessa"<<endl;
+        exit(1);
+    }
+    if(a<=0){
         cout<<"Inserire un valore positivo"<<endl;
 
         cin>>a;
     }
+    
 
     return a;
 }
