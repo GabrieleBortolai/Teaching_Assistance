@@ -17,9 +17,15 @@ int shift(char a, int s){
     return a + s;
 }
 
+// char critta(char a, int key){
+    
+//     return shift((shift(a, - find_min(a)) + key % 25), find_min(a));
+
+// }
+
 char critta(char a, int key){
     
-    return shift((shift(a, - find_min(a)) + key % 25), find_min(a));
+    return a + key % 25;
 
 }
 
