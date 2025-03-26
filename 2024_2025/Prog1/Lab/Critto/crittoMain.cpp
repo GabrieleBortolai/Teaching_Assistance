@@ -6,7 +6,6 @@
 
 using namespace std;
 
-
 int main(){
 
     string testo = read_str("inserire il testo da criptare");
