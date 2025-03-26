@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <cmath>
 #include "fun.h"
 #include "crittoFun.h"
 
@@ -16,7 +17,7 @@ int main(){
     cout<<critta_testo(testo, key)<<endl;
 
     cout<<"Testo decriptato"<<endl;
-    cout<<critta_testo(critta_testo(testo, key), - key)<<endl;
+    cout<<critta_testo(critta_testo(testo, key), 26 - key % 26)<<endl;
     
     return 0;
 }
