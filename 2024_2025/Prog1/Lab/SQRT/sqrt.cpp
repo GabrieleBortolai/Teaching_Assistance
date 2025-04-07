@@ -11,9 +11,6 @@ int main(){
 
     cout<<Sqrt(x, err)<<endl;
 
-
-
-
     return 0;
 }
 
@@ -30,6 +27,7 @@ double Sqrt(double x, double e){
         min = x;
         max = 1;
     }
+
 do{
 
     y = (min + max)/2;

@@ -3,6 +3,7 @@
 using namespace std;
 
 bool Primo(int);
+double Read(string);
 
 int main(){
 
@@ -55,4 +56,9 @@ bool Primo(int val){
     }
 
     return true;
+}
+
+double Read(string testo){
+
+    return 0;
 }
