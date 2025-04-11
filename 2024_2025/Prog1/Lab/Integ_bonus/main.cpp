@@ -90,7 +90,7 @@ double integraleTrapezi(int F, int a, int b, int N){
     check_extremes(a, b);
     check_numTrap(N);
 
-    double A = 0, sum = 0;
+    double A = 0;
     int h, e;
 
     Lato(a, b, h);
