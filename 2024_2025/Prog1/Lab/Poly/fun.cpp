@@ -1,8 +1,29 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 int read(string testo){
+
+    int a;
+    
+    do{
+        if(!cin || a < 2){
+
+            cerr<<"Valore non ammesso, riprovare"<<endl;
+            cin.clear();
+            cin.ignore(255, '\n');
+        }
+
+        cout<<testo<<endl;
+        cin>>a;
+
+    } while(!cin || a < 2);
+
+    return a;
+}
+
+int read_num_val(string testo){
 
     int a;
     
@@ -21,6 +42,7 @@ int read(string testo){
 
     return a;
 }
+
 
 double read_coeff(string testo, int val){
 

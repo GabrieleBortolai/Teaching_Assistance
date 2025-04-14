@@ -66,5 +66,6 @@ double * sommaPolinomi(double * P1, int grado1, double *P2, int grado2, int &gra
 
 void stampaPolinomio(double * Poly, int degree);
 void Clean(double *v1, double *v2, double *v3);
+void studioPoly(double &der, double &der2);
 
 #endif

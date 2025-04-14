@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 #include "fun.h"
 
 using namespace std;
@@ -65,6 +66,28 @@ void Clean(double *v1, double *v2, double *v3){
     unmount_pointer(v1);
     unmount_pointer(v2);
     unmount_pointer(v3);
+}
 
+double valorePolinomio(double * Pol, int grado, double X){
+
+    double val;
+
+    for(int i=0; i <= grado; i++){
+
+        val += Pol[i] * pow(X, i);
+    }
+
+    return val;
+}
+
+void studioPoly(double &der, double &der2){
+
+    if(der>0) cout<<"Crescente"<<endl;
+    else if(der<0) cout<<"Decrescente"<<endl;
+    else cout<<"Nulla"<<endl;
+
+    if(der2>0) cout<<"Concava"<<endl;
+    else if(der2<0) cout<<"Convessa"<<endl;
+    else cout<<"Sella"<<endl;
 }
 
