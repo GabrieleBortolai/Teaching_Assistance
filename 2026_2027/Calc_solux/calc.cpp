@@ -41,7 +41,7 @@ int main(){
             if(prima){
                 acc=num;       
             }
-            
+
             else{
                 switch(op){
                     case '+': acc=acc+num;
@@ -50,8 +50,13 @@ int main(){
                         break;
                     case '*': acc=acc*num;
                         break;
-                    case '/': acc=acc/num;
-                        break;
+                    case '/': 
+                    if(num==0){
+                        cout<<"Impossibili dividere per zero!\n";
+                        return 1;
+                    }
+                    acc=acc/num;
+                    break;
                 }
                 
             }
@@ -79,8 +84,6 @@ int main(){
             decimale=false;
             prima=true;
         }
-
-
 
         else if((c == 'q') || (c == 'Q')){
             cout << "Stop !\n";
